@@ -470,9 +470,9 @@ export default function Dashboard() {
                           <br></br>
                           Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
                           <TableCell className="hidden sm:table-cell">
-                            <Checkbox id="github-access" />
+                            <Checkbox id="jira-access" />
                           </TableCell>
-                          <TableCell className="font-medium">GitHub Access</TableCell>
+                          <TableCell className="font-medium">JIRA Access</TableCell>
                           <TableCell>
                             <Badge variant="outline">Pending</Badge>
                           </TableCell>
@@ -521,9 +521,9 @@ export default function Dashboard() {
                           <br></br>
                           Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
                           <TableCell className="hidden sm:table-cell">
-                            <Checkbox id="github-access" />
+                            <Checkbox id="slack-access" />
                           </TableCell>
-                          <TableCell className="font-medium">GitHub Access</TableCell>
+                          <TableCell className="font-medium">Slack Access</TableCell>
                           <TableCell>
                             <Badge variant="outline">Pending</Badge>
                           </TableCell>
@@ -572,9 +572,9 @@ export default function Dashboard() {
                           <br></br>
                           Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
                           <TableCell className="hidden sm:table-cell">
-                            <Checkbox id="github-access" />
+                            <Checkbox id="cats-access" />
                           </TableCell>
-                          <TableCell className="font-medium">GitHub Access</TableCell>
+                          <TableCell className="font-medium">CATS Access</TableCell>
                           <TableCell>
                             <Badge variant="outline">Pending</Badge>
                           </TableCell>
