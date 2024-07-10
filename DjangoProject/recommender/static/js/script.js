@@ -52,7 +52,7 @@ document.getElementById('searchButton').addEventListener('click', function() {
 
                     // Create the Add button
                     var addButton = document.createElement('button');
-                    addButton.classList.add('card-add-btn');
+                    addButton.classList.add('.btn-primary');
                     addButton.textContent = 'Add';
 
                     // Append the buttons to the button div
