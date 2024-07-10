@@ -340,7 +340,31 @@ export default function Dashboard() {
                             </DropdownMenu>
                           </TableCell>
                         </TableRow>
-                        <TableRow>
+                        <TableRow expandableContent=
+                        {<div id='AccessText'>GitHub is a web-based platform that hosts Git repositories. 
+                        It allows developers to store their code, track changes, and collaborate with others. 
+                        Key features include: 
+                          <br></br>
+                          <br></br>
+                          - <b>Git:</b> A system to manage code history.
+                          <br></br>
+                          - <b>Repositories:</b> Online folders for project files.
+                          <br></br>
+                          - <b>Forking:</b> Copying a repo to make changes without affecting the original.
+                          <br></br>
+                          - <b>Pull Requests:</b> Proposing changes to someone else’s project.
+                          <br></br>
+                          <br></br>
+                          It’s a tool for developers and non-developers alike to work together on projects. GitHub simplifies sharing and building upon each other’s work.
+                          <br></br>
+                          <br></br>
+                          To gain access to GitHub <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target="_blank">CLICK HERE</a>
+                          <br></br>
+                          <br></br>
+                          Then request specific access to needed repositories.
+                          <br></br>
+                          <br></br>
+                          Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
                       
                           <TableCell className="hidden sm:table-cell">
                             <Checkbox id="cortex-access" />
@@ -369,7 +393,31 @@ export default function Dashboard() {
                             </DropdownMenu>
                           </TableCell>
                         </TableRow>
-                        <TableRow>
+                        <TableRow expandableContent=
+                        {<div id='AccessText'>GitHub is a web-based platform that hosts Git repositories. 
+                        It allows developers to store their code, track changes, and collaborate with others. 
+                        Key features include: 
+                          <br></br>
+                          <br></br>
+                          - <b>Git:</b> A system to manage code history.
+                          <br></br>
+                          - <b>Repositories:</b> Online folders for project files.
+                          <br></br>
+                          - <b>Forking:</b> Copying a repo to make changes without affecting the original.
+                          <br></br>
+                          - <b>Pull Requests:</b> Proposing changes to someone else’s project.
+                          <br></br>
+                          <br></br>
+                          It’s a tool for developers and non-developers alike to work together on projects. GitHub simplifies sharing and building upon each other’s work.
+                          <br></br>
+                          <br></br>
+                          To gain access to GitHub <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target="_blank">CLICK HERE</a>
+                          <br></br>
+                          <br></br>
+                          Then request specific access to needed repositories.
+                          <br></br>
+                          <br></br>
+                          Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
                           <TableCell className="hidden sm:table-cell">
                             <Checkbox id="backstage-access" />
                           </TableCell>
@@ -380,6 +428,159 @@ export default function Dashboard() {
                           <TableCell className="hidden md:table-cell">400 hours</TableCell>
                           <TableCell className="hidden md:table-cell">Tim Coleman</TableCell>
                           <TableCell className="hidden md:table-cell">2023-11-29 08:15 AM</TableCell>
+                          <TableCell>
+                            <DropdownMenu>
+                              <DropdownMenuTrigger asChild>
+                                <Button aria-haspopup="true" size="icon" variant="ghost">
+                                  <MoreHorizontal className="h-4 w-4" />
+                                  <span className="sr-only">Toggle menu</span>
+                                </Button>
+                              </DropdownMenuTrigger>
+                              <DropdownMenuContent align="end">
+                                <DropdownMenuLabel>Actions</DropdownMenuLabel>
+                                <DropdownMenuItem>Edit</DropdownMenuItem>
+                                <DropdownMenuItem>Delete</DropdownMenuItem>
+                              </DropdownMenuContent>
+                            </DropdownMenu>
+                          </TableCell>
+                        </TableRow>
+                        <TableRow expandableContent=
+                        {<div id='AccessText'>GitHub is a web-based platform that hosts Git repositories. 
+                        It allows developers to store their code, track changes, and collaborate with others. 
+                        Key features include: 
+                          <br></br>
+                          <br></br>
+                          - <b>Git:</b> A system to manage code history.
+                          <br></br>
+                          - <b>Repositories:</b> Online folders for project files.
+                          <br></br>
+                          - <b>Forking:</b> Copying a repo to make changes without affecting the original.
+                          <br></br>
+                          - <b>Pull Requests:</b> Proposing changes to someone else’s project.
+                          <br></br>
+                          <br></br>
+                          It’s a tool for developers and non-developers alike to work together on projects. GitHub simplifies sharing and building upon each other’s work.
+                          <br></br>
+                          <br></br>
+                          To gain access to GitHub <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target="_blank">CLICK HERE</a>
+                          <br></br>
+                          <br></br>
+                          Then request specific access to needed repositories.
+                          <br></br>
+                          <br></br>
+                          Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
+                          <TableCell className="hidden sm:table-cell">
+                            <Checkbox id="github-access" />
+                          </TableCell>
+                          <TableCell className="font-medium">GitHub Access</TableCell>
+                          <TableCell>
+                            <Badge variant="outline">Pending</Badge>
+                          </TableCell>
+                          <TableCell className="hidden md:table-cell">5 hours</TableCell>
+                          <TableCell className="hidden md:table-cell">Cole Thomas</TableCell>
+                          <TableCell className="hidden md:table-cell">2023-07-12 10:42 AM</TableCell>
+                          <TableCell>
+                            <DropdownMenu>
+                              <DropdownMenuTrigger asChild>
+                                <Button aria-haspopup="true" size="icon" variant="ghost">
+                                  <MoreHorizontal className="h-4 w-4" />
+                                  <span className="sr-only">Toggle menu</span>
+                                </Button>
+                              </DropdownMenuTrigger>
+                              <DropdownMenuContent align="end">
+                                <DropdownMenuLabel>Actions</DropdownMenuLabel>
+                                <DropdownMenuItem>Edit</DropdownMenuItem>
+                                <DropdownMenuItem>Delete</DropdownMenuItem>
+                              </DropdownMenuContent>
+                            </DropdownMenu>
+                          </TableCell>
+                        </TableRow>
+                        <TableRow expandableContent=
+                        {<div id='AccessText'>GitHub is a web-based platform that hosts Git repositories. 
+                        It allows developers to store their code, track changes, and collaborate with others. 
+                        Key features include: 
+                          <br></br>
+                          <br></br>
+                          - <b>Git:</b> A system to manage code history.
+                          <br></br>
+                          - <b>Repositories:</b> Online folders for project files.
+                          <br></br>
+                          - <b>Forking:</b> Copying a repo to make changes without affecting the original.
+                          <br></br>
+                          - <b>Pull Requests:</b> Proposing changes to someone else’s project.
+                          <br></br>
+                          <br></br>
+                          It’s a tool for developers and non-developers alike to work together on projects. GitHub simplifies sharing and building upon each other’s work.
+                          <br></br>
+                          <br></br>
+                          To gain access to GitHub <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target="_blank">CLICK HERE</a>
+                          <br></br>
+                          <br></br>
+                          Then request specific access to needed repositories.
+                          <br></br>
+                          <br></br>
+                          Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
+                          <TableCell className="hidden sm:table-cell">
+                            <Checkbox id="github-access" />
+                          </TableCell>
+                          <TableCell className="font-medium">GitHub Access</TableCell>
+                          <TableCell>
+                            <Badge variant="outline">Pending</Badge>
+                          </TableCell>
+                          <TableCell className="hidden md:table-cell">5 hours</TableCell>
+                          <TableCell className="hidden md:table-cell">Cole Thomas</TableCell>
+                          <TableCell className="hidden md:table-cell">2023-07-12 10:42 AM</TableCell>
+                          <TableCell>
+                            <DropdownMenu>
+                              <DropdownMenuTrigger asChild>
+                                <Button aria-haspopup="true" size="icon" variant="ghost">
+                                  <MoreHorizontal className="h-4 w-4" />
+                                  <span className="sr-only">Toggle menu</span>
+                                </Button>
+                              </DropdownMenuTrigger>
+                              <DropdownMenuContent align="end">
+                                <DropdownMenuLabel>Actions</DropdownMenuLabel>
+                                <DropdownMenuItem>Edit</DropdownMenuItem>
+                                <DropdownMenuItem>Delete</DropdownMenuItem>
+                              </DropdownMenuContent>
+                            </DropdownMenu>
+                          </TableCell>
+                        </TableRow>
+                        <TableRow expandableContent=
+                        {<div id='AccessText'>GitHub is a web-based platform that hosts Git repositories. 
+                        It allows developers to store their code, track changes, and collaborate with others. 
+                        Key features include: 
+                          <br></br>
+                          <br></br>
+                          - <b>Git:</b> A system to manage code history.
+                          <br></br>
+                          - <b>Repositories:</b> Online folders for project files.
+                          <br></br>
+                          - <b>Forking:</b> Copying a repo to make changes without affecting the original.
+                          <br></br>
+                          - <b>Pull Requests:</b> Proposing changes to someone else’s project.
+                          <br></br>
+                          <br></br>
+                          It’s a tool for developers and non-developers alike to work together on projects. GitHub simplifies sharing and building upon each other’s work.
+                          <br></br>
+                          <br></br>
+                          To gain access to GitHub <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target="_blank">CLICK HERE</a>
+                          <br></br>
+                          <br></br>
+                          Then request specific access to needed repositories.
+                          <br></br>
+                          <br></br>
+                          Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
+                          <TableCell className="hidden sm:table-cell">
+                            <Checkbox id="github-access" />
+                          </TableCell>
+                          <TableCell className="font-medium">GitHub Access</TableCell>
+                          <TableCell>
+                            <Badge variant="outline">Pending</Badge>
+                          </TableCell>
+                          <TableCell className="hidden md:table-cell">5 hours</TableCell>
+                          <TableCell className="hidden md:table-cell">Cole Thomas</TableCell>
+                          <TableCell className="hidden md:table-cell">2023-07-12 10:42 AM</TableCell>
                           <TableCell>
                             <DropdownMenu>
                               <DropdownMenuTrigger asChild>
@@ -413,15 +614,6 @@ export default function Dashboard() {
             </div>
           </TabsContent>
         </Tabs>
-
-        <Accordion type="single" collapsible>
-  <AccordionItem value="item-1">
-    <AccordionTrigger>Is it accessible?</AccordionTrigger>
-    <AccordionContent>
-      Yes. It adheres to the WAI-ARIA design pattern.
-    </AccordionContent>
-  </AccordionItem>
-</Accordion>
 
       </main>
     </div>
