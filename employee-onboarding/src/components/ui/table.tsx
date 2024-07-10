@@ -1,4 +1,6 @@
-import * as React from "react"
+//import * as React from "react"
+import React, { useState } from "react";
+
 
 import { cn } from "@/lib/utils"
 
@@ -51,20 +53,44 @@ const TableFooter = React.forwardRef<
 ))
 TableFooter.displayName = "TableFooter"
 
+
 const TableRow = React.forwardRef<
   HTMLTableRowElement,
-  React.HTMLAttributes<HTMLTableRowElement>
->(({ className, ...props }, ref) => (
-  <tr
-    ref={ref}
-    className={cn(
-      "border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted",
-      className
-    )}
-    {...props}
-  />
-))
-TableRow.displayName = "TableRow"
+  React.HTMLAttributes<HTMLTableRowElement> & { expandableContent?: React.ReactNode }
+>(({ className, children, expandableContent, ...props }, ref) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  return (
+    <>
+      <tr
+        ref={ref}
+        className={cn(
+          "border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted cursor-pointer",
+          className
+        )}
+        {...props}
+        onClick={toggleExpand}
+      >
+        <td className="flex items-center space-x-2">
+        
+        </td>
+        {children}
+      </tr>
+      {isExpanded && (
+        <tr>
+          <td colSpan={React.Children.count(children) + 1}>
+            <div className="p-4">{expandableContent}</div>
+          </td>
+        </tr>
+      )}
+    </>
+  );
+});
+TableRow.displayName = "TableRow";
 
 const TableHead = React.forwardRef<
   HTMLTableCellElement,
