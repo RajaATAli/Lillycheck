@@ -1,0 +1,26 @@
+/* src/Employee.css */
+
+.app-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .cards-section {
+    flex: 60%; /* Adjusted to 60% width */
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .progress-section {
+    flex: 40%; /* Adjusted to 40% width */
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .progressBar {
+    width: 80%; /* Adjust width of the progress bar */
+  }
+  
