@@ -69,3 +69,12 @@
       @apply bg-background text-foreground;
     }
   }
+
+  .cardContent {
+    flex-direction: column;
+  }
+
+  .cardComponent {
+    width: 20%;
+    padding: 10px;
+  }
