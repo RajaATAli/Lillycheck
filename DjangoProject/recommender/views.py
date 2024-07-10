@@ -20,7 +20,7 @@ def create_system(tech_info):
         PROMPT_CONFIG = json.load(file)
     available_tech = "\nThe following are the available technologies:\n"
     for tech in tech_info:
-        available_tech += f"Name: {tech["name"]}\nDescription:{tech["description"]}\n"
+        available_tech += f"Name: {tech['name']}\nDescription:{tech['description']}\n"
     return PROMPT_CONFIG['system'] + available_tech
 
 def get_tech_info(role):
