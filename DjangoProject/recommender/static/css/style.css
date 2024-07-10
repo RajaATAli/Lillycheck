@@ -1,0 +1,100 @@
+
+/* Custom CSS for minimalist styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #343a40;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn-primary {
+    border-radius: 0;
+}
+
+h2 {
+    color: #343a40;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #6c757d;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(213, 43, 30);
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@600&display=swap');
+
+:root {
+  --green: #b8d953;
+  --lilac: #b2b2eb;
+  --pink: #bb86e9;
+  --dark-green: #529a91;
+  --peach: #fe96b7;
+  --black: #191819;
+  --grey: #2a292a;
+  --white: #d9d9d9;
+
+}
+
+p, h2 {
+  margin: 0;
+}
+
+h2 {
+  color: white;
+}
+
+
+.code-block {
+  font-family: 'Courier New', Courier, monospace; 
+  color: white;
+  background-color: black; 
+  padding: 5px; 
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+  
+}
+
+body {
+  background: var(--black);
+  font-family: 'Onest', sans-serif;
+}
+
