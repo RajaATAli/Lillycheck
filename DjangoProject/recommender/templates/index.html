@@ -34,7 +34,15 @@
                 <div class="input-group">
                     <form method="post">
                         {% csrf_token %}
-                        <input type="text" class="form-control" id="searchInput" placeholder="Enter your search query">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Enter the role" aria-label="Role">
+                        <select class="form-control" id="employeeSelect" aria-label="Employee Name">
+                            <option value="">Select Employee</option>
+                            <option value="John Doe">John Doe</option>
+                            <option value="Jane Smith">Jane Smith</option>
+                            <option value="Michael Johnson">Michael Johnson</option>
+                            <option value="Emily Davis">Emily Davis</option>
+                            <option value="David Wilson">David Wilson</option>
+                        </select>
                     </form>
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="button" id="searchButton">Search</button>
@@ -47,7 +55,7 @@
                 <h2>Project Description</h2>
                 <p>Type in the project specifications for your employee.</p>
                 <div class="input-group">
-                    <textarea class="form-control" id="descriptionInput" placeholder="Paste your description here" style="height: 200px;"></textarea>
+                    <textarea class="form-control" aria-label="Project Description" id="descriptionInput" placeholder="Paste your description here" style="height: 200px;"></textarea>
                 </div>
             </div>
         </div>

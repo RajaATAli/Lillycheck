@@ -18,8 +18,6 @@ document.getElementById('searchButton').addEventListener('click', function() {
     var csrftoken = getCookie('csrftoken');
     var searchQuery = document.getElementById('searchInput').value;
     var description = document.getElementById('descriptionInput').value;
-    let bufferingAnimation = document.getElementById('loader-buf');
-    bufferingAnimation.style.display = 'block';  // Show the buffering animation
     // Send the searchInput and description to the Django app
     fetch('', {
         method: 'POST',
@@ -38,7 +36,7 @@ document.getElementById('searchButton').addEventListener('click', function() {
         try {
             // Handle the response from the Django app
             // Parse the data here
-            var response = jsonData["response"];
+            var response = data["response"];
             // Loop through each key in the response object
             for (var key in response) {
                 if (response.hasOwnProperty(key)) {
