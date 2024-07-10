@@ -22,6 +22,7 @@ const config: Config = {
         sans: ['var(--font-sans)', ...defaultFontFamily.sans],
       },
       colors: {
+        customRed: 'rgb(213, 43, 30)',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
