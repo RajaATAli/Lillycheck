@@ -81,7 +81,29 @@ import { Progress } from "@/components/ui/progress";
 import Header  from "../components/ui/header"
 
 export default function Dashboard() {
-  const [progress, setProgress] = React.useState(50);
+  const [progress, setProgress] = React.useState(0);
+  const [clickedCards, setClickedCards] = useState(0);
+  const totalCards = 6;
+  type AccessType = "github-access" | "cortex-access" | "backstage-access" | "jira-access" | "slack-access" | "cats-access";
+  
+  const [checkedBoxes, setCheckedBoxes] = useState<Record<AccessType, boolean>>({
+    "github-access": false,
+    "cortex-access": false,
+    "backstage-access": false,
+    "jira-access": false,
+    "slack-access": false,
+    "cats-access": false,
+  });
+
+  const handleCardClick = (id: AccessType) => {
+    if (!checkedBoxes[id]) {
+      setCheckedBoxes((prev) => ({ ...prev, [id]: true }));
+      const newClickedCards = clickedCards + 1;
+      setClickedCards(newClickedCards);
+      const newProgress = (newClickedCards / totalCards) * 100;
+      setProgress(newProgress);
+    }
+  };
 
 
   return (
@@ -219,7 +241,16 @@ export default function Dashboard() {
                           <br></br>
                           Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
                           <TableCell className="hidden sm:table-cell">
-                            <Checkbox id="github-access" />
+                          {!checkedBoxes["github-access"] ? (
+                                <Checkbox
+                                  id="github-access"
+                                  onCheckedChange={() =>
+                                    handleCardClick("github-access")
+                                  }
+                                />
+                              ) : (
+                                <span>✓</span> // You can replace this with an icon or any other indicator
+                              )}
                           </TableCell>
                           <TableCell className="font-medium">GitHub Access</TableCell>
                           <TableCell>
@@ -271,7 +302,16 @@ export default function Dashboard() {
                           Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
                       
                           <TableCell className="hidden sm:table-cell">
-                            <Checkbox id="cortex-access" />
+                          {!checkedBoxes["cortex-access"] ? (
+                                <Checkbox
+                                  id="cortex-access"
+                                  onCheckedChange={() =>
+                                    handleCardClick("cortex-access")
+                                  }
+                                />
+                              ) : (
+                                <span>✓</span> // You can replace this with an icon or any other indicator
+                              )}
                           </TableCell>
                           <TableCell className="font-medium">CORTEX Access
                           </TableCell>
@@ -323,7 +363,16 @@ export default function Dashboard() {
                           <br></br>
                           Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
                           <TableCell className="hidden sm:table-cell">
-                            <Checkbox id="backstage-access" />
+                          {!checkedBoxes["backstage-access"] ? (
+                                <Checkbox
+                                  id="backstage-access"
+                                  onCheckedChange={() =>
+                                    handleCardClick("backstage-access")
+                                  }
+                                />
+                              ) : (
+                                <span>✓</span> // You can replace this with an icon or any other indicator
+                              )}
                           </TableCell>
                           <TableCell className="font-medium">Backstage Access</TableCell>
                           <TableCell>
@@ -374,7 +423,16 @@ export default function Dashboard() {
                           <br></br>
                           Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
                           <TableCell className="hidden sm:table-cell">
-                            <Checkbox id="jira-access" />
+                          {!checkedBoxes["jira-access"] ? (
+                                <Checkbox
+                                  id="jira-access"
+                                  onCheckedChange={() =>
+                                    handleCardClick("jira-access")
+                                  }
+                                />
+                              ) : (
+                                <span>✓</span> // You can replace this with an icon or any other indicator
+                              )}
                           </TableCell>
                           <TableCell className="font-medium">JIRA Access</TableCell>
                           <TableCell>
@@ -425,7 +483,16 @@ export default function Dashboard() {
                           <br></br>
                           Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
                           <TableCell className="hidden sm:table-cell">
-                            <Checkbox id="slack-access" />
+                          {!checkedBoxes["slack-access"] ? (
+                                <Checkbox
+                                  id="slack-access"
+                                  onCheckedChange={() =>
+                                    handleCardClick("slack-access")
+                                  }
+                                />
+                              ) : (
+                                <span>✓</span> // You can replace this with an icon or any other indicator
+                              )}
                           </TableCell>
                           <TableCell className="font-medium">Slack Access</TableCell>
                           <TableCell>
@@ -476,7 +543,16 @@ export default function Dashboard() {
                           <br></br>
                           Here is a video demo of GitHub<a id='AccessLink' href='https://www.maggotdrowning.com/forums/media/fat-squirrel-jpg.15818/full' target="_blank" > CLICK HERE</a></div>}>
                           <TableCell className="hidden sm:table-cell">
-                            <Checkbox id="cats-access" />
+                          {!checkedBoxes["cats-access"] ? (
+                                <Checkbox
+                                  id="cats-access"
+                                  onCheckedChange={() =>
+                                    handleCardClick("cats-access")
+                                  }
+                                />
+                              ) : (
+                                <span>✓</span> // You can replace this with an icon or any other indicator
+                              )}
                           </TableCell>
                           <TableCell className="font-medium">CATS Access</TableCell>
                           <TableCell>
@@ -507,20 +583,34 @@ export default function Dashboard() {
                 </CardContent>
                 <CardFooter>
                   <div className="text-xs text-muted-foreground">
-                    Showing <strong>1-3</strong> of <strong>3</strong> tasks
+                    Showing <strong>1-6</strong> of <strong>3</strong> tasks
                   </div>
                 </CardFooter>
               </Card>
               <div className="progress-container">
-                <h3 className="text-lg font-bold mb-2">Redeem Points</h3>
-                <Progress value={progress} className="w-full" />
+                  <h3 className="text-lg  mb-2">Redeem Inspire Points</h3>
+                  <div className="vertical-progress-container">
+                    <div className="vertical-progress">
+                      <Progress
+                        value={progress}
+                        className="w-full"
+                        indicatorColor="#D52B1E"
+                        milestones={[
+                          { value: 0, label: "Start" },
+                          { value: 25, label: "25 " },
+                          { value: 50, label: "50" },
+                          { value: 75, label: "75" },
+                          { value: 100, label: "100" },
+                        ]}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </TabsContent>
-        </Tabs>
-
-      </main>
+            </TabsContent>
+          </Tabs>
+        </main>
+      </div>
     </div>
-  </div>
-  )
+  );
 }

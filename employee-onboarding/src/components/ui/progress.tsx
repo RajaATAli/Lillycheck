@@ -1,28 +1,59 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import * as ProgressPrimitive from "@radix-ui/react-progress"
+import * as React from "react";
+import * as ProgressPrimitive from "@radix-ui/react-progress";
+import { cn } from "@/lib/utils";
 
-import { cn } from "@/lib/utils"
+// Define milestone interface
+interface Milestone {
+  value: number; // Value as percentage
+  label: string; // Label to display
+}
 
+// ForwardRef type definition for Progress component
 const Progress = React.forwardRef<
   React.ElementRef<typeof ProgressPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root>
->(({ className, value, ...props }, ref) => (
-  <ProgressPrimitive.Root
-    ref={ref}
-    className={cn(
-      "relative h-4 w-full overflow-hidden rounded-full bg-secondary",
-      className
-    )}
-    {...props}
-  >
-    <ProgressPrimitive.Indicator
-      className="h-full w-full flex-1 bg-primary transition-all"
-      style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
-    />
-  </ProgressPrimitive.Root>
-))
-Progress.displayName = ProgressPrimitive.Root.displayName
+  React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root> & {
+    indicatorColor?: string; // Optional indicator color
+    milestones?: Milestone[]; // Optional milestones array
+  }
+>(({ className, value, indicatorColor, milestones = [], ...props }, ref) => (
+  <div className="relative">
+    {/* Progress bar root */}
+    <ProgressPrimitive.Root
+      ref={ref}
+      className={cn(
+        "relative h-4 w-full overflow-hidden rounded-full bg-secondary", // Adjusted width here
+        className
+      )}
+      {...props}
+    >
+      <ProgressPrimitive.Indicator
+        className="h-full flex-1 transition-all"
+        style={{
+          transform: `translateX(-${100 - (value || 0)}%)`, // Translates based on value
+          backgroundColor: indicatorColor || "hsl(var(--primary))", // Default or custom indicator color
+        }}
+      />
+    </ProgressPrimitive.Root>
+    {/* Render milestones */}
+    {milestones.map((milestone, index) => (
+      <div
+        key={index}
+        className="absolute top-full transform -translate-x-1/2"
+        style={{ left: `${milestone.value}%` }} // Positions milestone based on its value
+      >
+        <div className="milestone-box">
+         
+          <span className="inline-block milestone-label">
+            {milestone.label} {/* Displays milestone label */}
+          </span>
+        </div>
+      </div>
+    ))}
+  </div>
+));
 
-export { Progress }
+Progress.displayName = ProgressPrimitive.Root.displayName; // Set display name for component
+
+export { Progress }; // Export Progress component
