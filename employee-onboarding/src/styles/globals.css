@@ -92,3 +92,9 @@
     max-width: 600px; 
     margin-left: 26px; 
   }
+
+  .styledLink {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+  }
