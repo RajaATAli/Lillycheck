@@ -70,11 +70,19 @@
     }
   }
 
-  .cardContent {
-    flex-direction: column !important;
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0;
   }
 
-  .cardComponent {
-    width: 20% !important;
-    padding: 10px !important;
+  .vertical-progress-bar {
+    --progress-height: 100px;
+    height: var(--progress-height);
+    width: 10px;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
   }
+  

@@ -66,6 +66,7 @@ import {
 } from "@/components/ui/tooltip"
 
 import { Checkbox } from "@/components/ui/checkbox"
+import { Progress } from "@/components/ui/progress";
 
 export default function Dashboard() {
   return (
@@ -160,7 +161,7 @@ export default function Dashboard() {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
-                  <Link href="#">Onboarding Tasks</Link>
+                  <Link href="#">LillyCheck Employee Dashboard</Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -199,6 +200,7 @@ export default function Dashboard() {
             </DropdownMenuContent>
           </DropdownMenu>
         </header>
+        <main className="grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8"></main>
         <main className="grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8">
           <Tabs defaultValue="all">
             <div className="flex items-center">
@@ -245,9 +247,9 @@ export default function Dashboard() {
               </div>
             </div>
             <TabsContent value="all">
-              <Card x-chunk="dashboard-06-chunk-0">
+              <Card className="card">
                 <CardHeader>
-                  <CardTitle>Task List</CardTitle>
+                  <CardTitle>Onboarding Task List</CardTitle>
                   <CardDescription>
                     Speed up your career success with our LillyCheck Onboarding Tasks Manager!
                   </CardDescription>
@@ -291,7 +293,7 @@ export default function Dashboard() {
                           5 hours
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
-                          25
+                          Cole Thomas
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
                           2023-07-12 10:42 AM
@@ -330,7 +332,7 @@ export default function Dashboard() {
                           336 Hours
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
-                          100
+                          Nathan Morin
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
                           2023-10-18 03:21 PM
@@ -369,7 +371,7 @@ export default function Dashboard() {
                           400 hours
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
-                          50
+                          Tim Coleman
                         </TableCell>
                         <TableCell className="hidden md:table-cell">
                           2023-11-29 08:15 AM
