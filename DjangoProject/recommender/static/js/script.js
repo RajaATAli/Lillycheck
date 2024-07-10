@@ -40,7 +40,7 @@ document.getElementById('searchButton').addEventListener('click', function() {
             // Loop through each key in the response object
             for (var key in response) {
                 if (response.hasOwnProperty(key)) {
-                    var container = document.querySelector('.row.justify-content-center.mt-5 .col-md-6');
+                    var container = document.querySelector('.row.justify-content-center.mt-5');
                     var value = response[key];
                     // Create a card element
                     var card = document.createElement('div');
