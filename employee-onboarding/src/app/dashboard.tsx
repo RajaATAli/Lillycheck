@@ -371,8 +371,17 @@ export default function Dashboard() {
                 </CardFooter>
               </Card>
               <div className="progress-container">
-                <h3 className="text-lg font-bold mb-2">Redeem Points</h3>
-                <Progress value={progress} className="w-full" />
+                <h3 className="text-lg  mb-2">Redeem Inspire Points</h3>
+                <div className="vertical-progress-container">
+                 <div className="vertical-progress">
+                    <Progress value={progress} className="w-full" indicatorColor="#D52B1E"  
+                    milestones={[{ value: 0, label: 'Start' },
+                                { value: 25, label: '25 ' },
+                                { value: 50, label: '50' },
+                                { value: 75, label: '75' },
+                                { value: 100, label: '100' }, ]}/>
+                  </div>
+                </div>
               </div>
             </div>
           </TabsContent>
