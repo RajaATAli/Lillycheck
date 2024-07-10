@@ -87,8 +87,43 @@
   .progress-container {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    width: 100%;
-    max-width: 600px; 
-    margin-left: 26px; 
+    align-items: center;
+    width: 17%;
+    max-width: 1000px;
+    margin-left: 26px;
+    /* this is to make it look like the card */
+    border-radius: 0.10rem;
+    border: 1px solid #e2e8f0; /* equivalent to border in Tailwind CSS */
+    background-color: #ffffff; /* equivalent to bg-card in Tailwind CSS */
+    color: #1a202c; /* equivalent to text-card-foreground in Tailwind CSS */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* equivalent to shadow-sm in Tailwind CSS */
+    padding: 1rem; /* equivalent to p-4 in Tailwind CSS */
   }
+  
+  .vertical-progress-container {
+    height: 353px;
+    position: relative;
+    margin-top: 10px; 
+  }
+  
+  .vertical-progress {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    position: absolute;
+    top: 100%;
+    /* this where you adjust the bar length  width and height are
+    switched */
+    width: 350px; 
+    height: 30px; 
+  }
+  
+  /* Allows the vertical process width and height to show*/
+  .vertical-progress > div {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .milestone-label {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  
