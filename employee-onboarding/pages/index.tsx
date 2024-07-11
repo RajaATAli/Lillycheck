@@ -13,7 +13,7 @@ export default function Home() {
           bot_id: '7389706060237750277',
         },
         componentProps: {
-          title: 'LillyCheck',
+          title: 'Lilly Intelligence',
         },
       });
     };
