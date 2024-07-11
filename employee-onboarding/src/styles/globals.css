@@ -125,3 +125,9 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
   }
+
+  .styledLink {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+  }
