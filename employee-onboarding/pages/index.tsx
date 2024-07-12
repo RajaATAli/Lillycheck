@@ -10,7 +10,7 @@ export default function Home() {
     script.onload = () => {
       new CozeWebSDK.WebChatClient({
         config: {
-          bot_id: '7389706060237750277',
+          bot_id: process.env.NEXT_PUBLIC_BOT_ID,
         },
         componentProps: {
           title: 'Lilly Intelligence',
