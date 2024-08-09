@@ -50,3 +50,7 @@ https://github.com/user-attachments/assets/980173ee-83bd-4d61-b0b1-0cdbb9a160e9
 ### Manager Dashboard
 
 
+https://github.com/user-attachments/assets/5501089e-3fcb-4803-b1f2-a444222c151b
+
+
+
