@@ -38,7 +38,15 @@ cd employee-onboarding
 ### Install Dependencies
 `npm install`
 
+
+
 ### Run the Development Server
 `npm run dev`
+
+## Demo
+### Employee Dashboard
+https://github.com/user-attachments/assets/980173ee-83bd-4d61-b0b1-0cdbb9a160e9
+
+### Manager Dashboard
 
 
