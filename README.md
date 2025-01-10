@@ -11,7 +11,7 @@ As much as we want to streamline the onboarding process, the pre-boarding proces
 ### Key Features
 
 - **Task Management:** Track onboarding tasks with status updates and average completion times.
-- **Access Requests:** Easily request access to essential platforms like GitHub, Cortex, Backstage, JIRA, Slack, and CATS.
+- **Access Requests:** Easily request access to essential platforms like GitHub, JIRA, and Slack
 - **Progress Tracking:** View and manage your progress through various stages of the onboarding process and get inspiration points to redeem for rewards at Lilly!
 - **AI Recommendations:** Receive personalized recommendations for onboarding tasks based on your role and department.
 - **AI Assistant:** Interact with an AI assistant to get answers to common questions and receive guidance on the onboarding process.
